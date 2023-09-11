@@ -24,8 +24,8 @@ export default function App() {
                    onChangeText={goalInputHandler} />
         <Button title="Add Goal" onPress={addGoalHandler} />
       </View>
-      <View styles={styles.goalsContainer}>
-        {courseGoals.map((goal) => <Text styles={styles.goalItem} key={goal}>{goal}</Text>)}
+      <View style={styles.goalsContainer}>
+        {courseGoals.map((goal) => <Text style={styles.goalItem} key={goal}>{goal}</Text>)}
       </View>
     </View>
   );
